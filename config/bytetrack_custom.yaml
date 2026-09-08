@@ -1,0 +1,14 @@
+# Custom ByteTrack tuning for this project's detector.
+#
+# The DOTA-pretrained OBB vehicle detector (see docs/model_notes.md) runs at
+# a lower confidence floor (0.2) than ByteTrack's defaults expect, and boxes
+# are axis-aligned approximations of oriented boxes (slightly jittery size
+# frame-to-frame). These settings reduce unnecessary ID switches for that
+# specific detector, on a mostly-static parking scene.
+tracker_type: bytetrack
+track_high_thresh: 0.25  # Ultralytics default
+track_low_thresh: 0.1    # Ultralytics default
+new_track_thresh: 0.25   # Ultralytics default -- lowering this increased ID churn (tested)
+track_buffer: 60         # ~2.5s at 24fps -- more patience for brief detection gaps (raised from default 30)
+match_thresh: 0.8        # Ultralytics default
+fuse_score: True

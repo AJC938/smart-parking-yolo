@@ -1,0 +1,13 @@
+venv/
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+outputs/*.mp4
+outputs/logs/*.log
+!outputs/logs/.gitkeep
+*.pt
+.vscode/
+.idea/
+.DS_Store
+*.egg-info/
