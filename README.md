@@ -19,6 +19,16 @@ The system reads a parking-lot video, detects vehicles frame by frame, tracks th
 
 ![Smart Parking Intelligence dashboard](images/dashboard_preview.png)
 
+## Live Demo
+
+The dashboard below is a live capture of the system processing the included parking video.
+
+<p align="center">
+  <img src="images/dashboard_demo.png" alt="Smart Parking live dashboard" width="100%">
+</p>
+
+[▶ View the Smart Parking live demo (MP4)](images/smart-parking-demo.mp4)
+
 ## Architecture
 
 ```
@@ -59,7 +69,10 @@ smart-parking-yolo/
 ├── tests/          # pytest unit tests
 ├── scripts/        # phase verification / debug scripts
 ├── docs/           # video analysis & model selection notes
-├── images/         # dashboard preview image
+├── images/         # dashboard preview and live demo assets
+│   ├── dashboard_preview.png
+│   ├── dashboard_demo.png
+│   └── smart-parking-demo.mp4
 ├── outputs/        # sample screenshots
 ├── main.py         # application entry point
 └── requirements.txt
