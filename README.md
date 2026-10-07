@@ -1,5 +1,9 @@
 # Smart Parking YOLO
 
+<p align="center">
+  <img src="images/project-header.png" alt="Illustrated parking bays with a detected vehicle" width="100%">
+</p>
+
 A local computer-vision application that watches a parking-lot video, detects and tracks vehicles with YOLO, and reports which individual parking spaces are occupied in a live desktop dashboard.
 
 ## Overview
@@ -69,7 +73,8 @@ smart-parking-yolo/
 ├── tests/          # pytest unit tests
 ├── scripts/        # phase verification / debug scripts
 ├── docs/           # video analysis & model selection notes
-├── images/         # dashboard preview and live demo assets
+├── images/         # project header, dashboard preview, and live demo assets
+│   ├── project-header.png
 │   ├── dashboard_preview.png
 │   ├── dashboard_demo.png
 │   └── smart-parking-demo.mp4
